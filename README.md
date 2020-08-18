@@ -84,7 +84,7 @@ class MyReduxStoreTest {
   ```
 - `data class` as well as just regular `class` as long as they have a primary or empty constructor
 - `null` as constructor parameter
-- default constructor parameters
+- default value for constructor parameters
 - `Enums`
   ```kotlin
    enum class AnEnum { A, B, C }
