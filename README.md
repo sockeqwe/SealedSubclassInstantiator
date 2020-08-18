@@ -25,6 +25,8 @@ val cars : List<Car> = instantiateSealedSubclasses(Car::class)
 println(cars) // prints: [RegularCar(horsePower=123, name="random string"), UniqueFerrari]
 ````
 
+Each instance of the sealed subclass is filled with random values (you can provide your own `PrimitiveTypeValueGenerator` as parameter to `instantiateSealedSubclasses(KClass<T>, PrimitiveTypeValueGenerator)` in case you need control over the values).
+
 ### Motivation and my primary use case for this library
 When writing unit tests for a Redux Store I want to test if a particular Action (expressed as a sealed class hierarchy) has no side effect on the State of the Redux Store:
 
@@ -97,3 +99,4 @@ class MyReduxStoreTest {
 - `Array`
 - Generics
 - Any type that has no public constructor
+- sealed class in sealed class
