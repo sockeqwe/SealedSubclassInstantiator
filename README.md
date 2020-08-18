@@ -75,20 +75,20 @@ class MyReduxStoreTest {
 - Kotlin `object`
 - Any class with primitives (int, long, boolean, string, char, float, double, short, byte) or enums as constructor parameters:
   ```kotlin
-      data class Foo(val i : Int, val str : String) : Parent()  
+  data class Foo(val i : Int, val str : String) : Parent()  
   ```
 - Any class with other class as constructor parameter that is composed of primitives:
   ```kotlin
-        data class SomeData(val i : Int, val str : String)
-        data class Foo(data : SomeData) : Parent()  
+  data class SomeData(val i : Int, val str : String)
+  data class Foo(data : SomeData) : Parent()  
   ```
 - `data class` as well as just regular `class` as long as they have a primary or empty constructor
 - `null` as constructor parameter
 - default value for constructor parameters
 - `Enums`
   ```kotlin
-   enum class AnEnum { A, B, C }
-   data class Foo(anEnum : AnEnum) : Parent()
+  enum class AnEnum { A, B, C }
+  data class Foo(anEnum : AnEnum) : Parent()
   ```
 
 ## Not yet supported features
