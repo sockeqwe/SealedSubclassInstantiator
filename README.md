@@ -1,3 +1,6 @@
+# Archived and not maintained:
+use https://github.com/sockeqwe/Instantiator instead.
+
 # Sealed Subclass Instantiator
 
 This is a simple generator that instantiates an instance of each member of a Kotlin `sealed class` hierarchy.
